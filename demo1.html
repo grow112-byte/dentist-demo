@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title id="meta-title">Strong Roots Dental Care – Best Dentist in Asansol</title>
+  <meta name="description" id="meta-desc" content=""/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" href="data.json" as="fetch" crossorigin="anonymous">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'DM Sans', sans-serif; opacity: 0; animation: fadeIn 0.4s ease-in forwards; animation-delay: 0.1s; }
+    @keyframes fadeIn { to { opacity: 1; } }
+    .headline { font-family: 'Playfair Display', serif; }
+    .btn-primary { background:#2563EB; color:#fff; }
+    .btn-primary:hover { background:#1d4ed8; }
+    .btn-wa { background:#16a34a; color:#fff; }
+    .btn-wa:hover { background:#15803d; }
+    .btn-outline { border:2px solid #2563EB; color:#2563EB; background:transparent; }
+    .btn-outline:hover { background:#2563EB; color:#fff; }
+    .card-shadow { box-shadow:0 4px 24px rgba(37,99,235,0.08); }
+    .star { color:#FBBF24; }
+    .section-tag { background:#EFF6FF; color:#2563EB; font-size:0.75rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; border-radius:999px; padding:4px 14px; display:inline-block; margin-bottom:10px; }
+    details summary { list-style:none; cursor:pointer; }
+    details summary::-webkit-details-marker { display:none; }
+    details[open] .faq-icon { transform:rotate(45deg); }
+    .faq-icon { transition:transform 0.2s; }
+    .hero-gradient { background: linear-gradient(135deg, #2563EB 0%, #1e40af 60%, #0e2d6b 100%); }
+    .scroll-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:1.5rem;padding-bottom:1rem;scrollbar-width:none;-ms-overflow-style:none;}
+    .scroll-row::-webkit-scrollbar{display:none;}
+    .scroll-card{scroll-snap-align:center;}
+    .carousel-nav-btn { position: absolute; top: 50%; transform: translateY(-50%); background: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; border: 1px solid #f3f4f6; color: #111827; font-weight: bold; z-index: 20; font-size: 1.25rem; transition: background 0.2s; }
+    .carousel-nav-btn:hover { background: #f9fafb; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    .prev-btn { left: -15px; } .next-btn { right: -15px; }
+    @media (min-width: 768px) { .prev-btn { left: -22px; } .next-btn { right: -22px; } }
+    .success-msg{display:none;margin-top:1rem;background:#d1fae5;color:#065f46;padding:0.75rem 1rem;border-radius:0.75rem;text-align:center;font-weight:600;font-size:0.875rem;}
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div>
+      <div class="text-blue-600 font-bold text-lg leading-tight" id="nav-name"></div>
+      <div class="text-xs text-gray-400" id="nav-tagline"></div>
+    </div>
+    
+    <!-- Desktop Links -->
+    <div class="hidden lg:flex items-center gap-6 font-semibold text-sm text-gray-600">
+      <a href="#services" class="hover:text-blue-600 transition">Services</a>
+      <a href="#about" class="hover:text-blue-600 transition">About</a>
+      <a href="#results" class="hover:text-blue-600 transition">Results</a>
+      <a href="#reviews" class="hover:text-blue-600 transition">Reviews</a>
+      <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <a id="nav-call" href="#" class="hidden lg:flex items-center gap-1 btn-primary px-4 py-2 rounded-lg text-sm font-semibold transition">📞 Call Now</a>
+      <a id="nav-wa" href="#" target="_blank" class="hidden lg:flex items-center gap-1 btn-wa px-4 py-2 rounded-lg text-sm font-semibold transition">💬 WhatsApp</a>
+      <a id="nav-call-mob" href="#" class="lg:hidden flex items-center gap-1 btn-primary px-3 py-2 rounded-lg text-sm font-semibold transition">📞 Call</a>
+      <button id="mobile-menu-btn" class="lg:hidden text-2xl text-gray-600 px-2 ml-1 focus:outline-none">&#9776;</button>
+    </div>
+  </div>
+  
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-xl py-4 px-6 flex flex-col gap-4 font-semibold text-gray-700">
+    <a href="#services" class="mobile-link hover:text-blue-600 transition">Services</a>
+    <a href="#about" class="mobile-link hover:text-blue-600 transition">About</a>
+    <a href="#results" class="mobile-link hover:text-blue-600 transition">Results</a>
+    <a href="#reviews" class="mobile-link hover:text-blue-600 transition">Reviews</a>
+    <a href="#faq" class="mobile-link hover:text-blue-600 transition">FAQ</a>
+    <a href="#contact" class="mobile-link hover:text-blue-600 transition">Contact Us</a>
+  </div>
+</nav>
+
+<script>
+  document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    });
+  });
+</script>
+
+<!-- HERO -->
+<section class="hero-gradient text-white py-16 md:py-24 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10" style="background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22><circle cx=%2230%22 cy=%2230%22 r=%2228%22 fill=%22none%22 stroke=%22white%22 stroke-width=%220.5%22/></svg>');background-size:60px;"></div>
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center relative z-10">
+    <div>
+      <div class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff;">🏆 Best Dental Clinic in Asansol</div>
+      <h1 class="headline text-3xl md:text-5xl font-bold leading-tight mt-3 mb-4" id="hero-title"></h1>
+      <p class="text-blue-100 text-base md:text-lg mb-6" id="hero-subtitle"></p>
+      <!-- Badges -->
+      <div class="flex flex-wrap gap-2 mb-8" id="hero-badges"></div>
+      <!-- CTAs -->
+      <div class="flex flex-wrap gap-3">
+        <a id="hero-call" href="#" class="flex items-center gap-2 bg-white text-blue-700 font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition text-sm md:text-base">📞 <span id="hero-calltext"></span></a>
+        <a id="hero-wa" href="#" target="_blank" class="flex items-center gap-2 btn-wa font-bold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition text-sm md:text-base">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span id="hero-watext"></span>
+        </a>
+      </div>
+    </div>
+    <div class="relative">
+      <img id="hero-img" src="" alt="Best dental clinic in Asansol" fetchpriority="high" class="rounded-2xl shadow-2xl w-full object-cover h-72 md:h-96"/>
+      <div class="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-xl p-3 flex items-center gap-2">
+        <span class="text-2xl">⭐</span>
+        <div><div class="font-bold text-gray-800 text-sm">Google Rated</div><div class="text-xs text-gray-500">4.9 / 5.0</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="bg-blue-600 py-10">
+  <div class="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-white text-center" id="stats-grid"></div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-16 bg-gray-50" id="services">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <div class="section-tag">Our Services</div>
+      <h2 class="headline text-3xl md:text-4xl font-bold text-gray-900 mt-2">Treatments Designed Around <span class="text-blue-600">Your Comfort</span></h2>
+      <p class="text-gray-500 mt-3 max-w-xl mx-auto">Every treatment at Strong Roots is outcome-focused — we don't just fix teeth, we restore your confidence.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8" id="services-grid"></div>
+    <!-- Mid CTA -->
+    <div class="mt-12 text-center flex flex-wrap justify-center gap-4">
+      <a id="svc-call" href="#" class="btn-primary px-8 py-3 rounded-xl font-semibold transition text-sm md:text-base">📞 Call Now</a>
+      <a id="svc-wa" href="#" target="_blank" class="btn-wa px-8 py-3 rounded-xl font-semibold transition text-sm md:text-base">💬 WhatsApp Chat</a>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR PROFILE -->
+<section class="py-16 bg-blue-50 bg-opacity-30" id="doctor">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <div class="section-tag">Meet Your Doctor</div>
+      <h2 class="headline text-3xl font-bold text-gray-900 mt-2">Expert Care You Can Trust</h2>
+    </div>
+    <div class="flex flex-col md:flex-row items-center gap-10 bg-blue-50 rounded-2xl p-8 card-shadow">
+      <img id="doctor-img" src="" alt="Doctor at Strong Roots Dental Care Asansol" loading="lazy" class="w-48 h-48 rounded-2xl object-cover shadow-lg flex-shrink-0"/>
+      <div>
+        <h3 class="text-2xl font-bold text-gray-900" id="doctor-name"></h3>
+        <p class="text-blue-600 font-semibold mt-1" id="doctor-qual"></p>
+        <div class="flex items-center gap-2 mt-2 mb-4">
+          <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full" id="doctor-exp"></span>
+          <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">Verified Specialist</span>
+        </div>
+        <p class="text-gray-600 leading-relaxed" id="doctor-bio"></p>
+        <div class="flex gap-3 mt-5">
+          <a id="doc-call" href="#" class="btn-primary px-5 py-2 rounded-lg text-sm font-semibold transition">📞 Book Appointment</a>
+          <a id="doc-wa" href="#" target="_blank" class="btn-wa px-5 py-2 rounded-lg text-sm font-semibold transition">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-16 bg-gray-50" id="about">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    <img id="about-img" src="" alt="Best dental clinic in Asansol interior" loading="lazy" class="rounded-2xl shadow-lg w-full h-80 object-cover"/>
+    <div>
+      <div class="section-tag">About Us</div>
+      <h2 class="headline text-3xl font-bold text-gray-900 mt-2 mb-4" id="about-title"></h2>
+      <p class="text-gray-600 leading-relaxed mb-6" id="about-text"></p>
+      <ul class="space-y-3" id="about-highlights"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE & AFTER -->
+<section class="py-16 bg-blue-50 bg-opacity-50" id="results">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <div class="section-tag">Transformations</div>
+      <h2 class="headline text-3xl font-bold text-gray-900 mt-2" id="ba-title"></h2>
+      <p class="text-gray-500 mt-2" id="ba-subtitle"></p>
+    </div>
+    <div class="relative max-w-4xl mx-auto px-4 md:px-8">
+      <button id="ba-prev" class="carousel-nav-btn prev-btn">&#8592;</button>
+      <div class="scroll-row" id="ba-scroll"></div>
+      <button id="ba-next" class="carousel-nav-btn next-btn">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="py-16 bg-blue-600">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <h2 class="headline text-3xl font-bold text-white">Why Asansol Trusts Strong Roots</h2>
+      <p class="text-blue-100 mt-2">Committed to your health, comfort, and smile</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6" id="why-grid"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-16 bg-gray-50" id="reviews">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <div class="section-tag">Patient Reviews</div>
+      <h2 class="headline text-3xl font-bold text-gray-900 mt-2">What Our Patients Say</h2>
+      <div class="flex justify-center gap-1 mt-3">
+        <span class="star text-xl">★★★★★</span>
+        <span class="text-gray-500 text-sm ml-2 mt-1">4.9 / 5 on Google</span>
+      </div>
+    </div>
+    <div class="relative px-2 md:px-6">
+      <button id="test-prev" class="carousel-nav-btn prev-btn">&#8592;</button>
+      <div class="scroll-row" id="testimonials-grid"></div>
+      <button id="test-next" class="carousel-nav-btn next-btn">&#8594;</button>
+    </div>
+    <!-- Post testimonials CTA -->
+    <div class="mt-12 text-center flex flex-wrap justify-center gap-4">
+      <a id="test-call" href="#" class="btn-primary px-8 py-3 rounded-xl font-semibold transition">📞 Book Appointment</a>
+      <a id="test-wa" href="#" target="_blank" class="btn-wa px-8 py-3 rounded-xl font-semibold transition">💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section class="py-16 bg-blue-50 bg-opacity-30" id="faq">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <div class="section-tag">FAQ</div>
+      <h2 class="headline text-3xl font-bold text-gray-900 mt-2">Common Questions Answered</h2>
+    </div>
+    <div class="space-y-4" id="faq-list"></div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="py-16 bg-gray-50" id="contact">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <div class="section-tag">Contact Us</div>
+      <h2 class="headline text-3xl font-bold text-gray-900 mt-2">Get in Touch with Us</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Info -->
+      <div class="space-y-5">
+        <div class="bg-white rounded-2xl p-6 card-shadow">
+          <div class="text-2xl mb-2">📍</div>
+          <div class="font-semibold text-gray-800 mb-1">Our Location</div>
+          <div class="text-gray-500 text-sm" id="c-address"></div>
+        </div>
+        <div class="bg-white rounded-2xl p-6 card-shadow">
+          <div class="text-2xl mb-2">📞</div>
+          <div class="font-semibold text-gray-800 mb-1">Phone / WhatsApp</div>
+          <a id="c-phone-link" href="#" class="text-blue-600 font-bold text-lg" id="c-phone"></a>
+        </div>
+        <div class="bg-white rounded-2xl p-6 card-shadow">
+          <div class="text-2xl mb-2">⏰</div>
+          <div class="font-semibold text-gray-800 mb-1">Working Hours</div>
+          <div class="text-gray-500 text-sm" id="c-hours"></div>
+        </div>
+        <div class="flex gap-3">
+          <a id="c-call" href="#" class="flex-1 btn-primary py-3 rounded-xl text-center font-bold text-sm transition">📞 Call Now</a>
+          <a id="c-wa" href="#" target="_blank" class="flex-1 btn-wa py-3 rounded-xl text-center font-bold text-sm transition">💬 WhatsApp</a>
+        </div>
+      </div>
+      <!-- Full Form -->
+      <form id="contact-form" class="bg-white rounded-2xl p-8 card-shadow space-y-4">
+        <input type="hidden" name="_captcha" value="false"/>
+  
+        <input type="hidden" name="_subject" value="New Patient Inquiry"/>
+        <div>
+          <label class="text-sm font-semibold text-gray-700 mb-1 block">Full Name *</label>
+          <input type="text" name="name" required placeholder="Your Name" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+        <div>
+          <label class="text-sm font-semibold text-gray-700 mb-1 block">Phone Number *</label>
+          <input type="tel" name="phone" required placeholder="Your Phone" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+        <div>
+          <label class="text-sm font-semibold text-gray-700 mb-1 block">Email Address</label>
+          <input type="email" name="email" placeholder="your@email.com" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        </div>
+        <div>
+          <label class="text-sm font-semibold text-gray-700 mb-1 block">Message</label>
+          <textarea name="message" rows="4" placeholder="Tell us about your dental concern..." class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        <button type="submit" class="w-full btn-primary py-3 rounded-xl font-bold text-sm tracking-wide transition hover:shadow-lg" id="form-submit">Send Message →</button>
+      </form>
+      <div class="success-msg">✅ Thank you! We'll reach back to you shortly.</div>
+    </div>
+    
+    <!-- GOOGLE MAP -->
+    <div class="mt-12 rounded-2xl overflow-hidden shadow-lg h-72 md:h-96 w-full bg-gray-200 border border-gray-200">
+      <iframe id="contact-map" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="py-16 bg-blue-700 text-white text-center">
+  <div class="max-w-2xl mx-auto px-4">
+    <h2 class="headline text-3xl md:text-4xl font-bold mb-3" id="final-title"></h2>
+    <p class="text-blue-100 mb-8 text-base" id="final-subtitle"></p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a id="final-call" href="#" class="bg-white text-blue-700 font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition text-sm md:text-base">📞 Call Now</a>
+      <a id="final-wa" href="#" target="_blank" class="btn-wa px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition font-bold text-sm md:text-base">💬 WhatsApp Chat</a>
+    </div>
+    <div class="mt-8 text-blue-100 text-sm" id="final-hours"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+  <div id="footer-name" class="text-white font-semibold mb-1"></div>
+  <div id="footer-addr"></div>
+  <div class="mt-4 text-xs">Best Dentist in Asansol | Root Canal Asansol | Dental Implants Burnpur | Teeth Whitening Asansol</div>
+</footer>
+
+<script>
+  // === FORM SUBMISSION SETUP ===
+  function setupForm(formEl, email) {
+    if (!formEl) return;
+    formEl.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = formEl.querySelector('button[type="submit"]');
+      const origText = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      fetch(`https://formsubmit.co/ajax/${email}`, {
+        method: 'POST',
+        body: new FormData(formEl),
+        headers: { 'Accept': 'application/json' }
+      }).then(() => {
+        formEl.reset(); btn.textContent = origText; btn.disabled = false;
+        const msg = formEl.parentElement.querySelector('.success-msg');
+        if (msg) { msg.style.display = 'block'; setTimeout(() => msg.style.display = 'none', 6000); }
+      }).catch(() => {
+        formEl.reset(); btn.textContent = origText; btn.disabled = false;
+        const msg = formEl.parentElement.querySelector('.success-msg');
+        if (msg) { msg.style.display = 'block'; setTimeout(() => msg.style.display = 'none', 6000); }
+      });
+    });
+  }
+
+  function initCarousel(rowId, prevId, nextId, autoScrollDelay) {
+    const row = document.getElementById(rowId);
+    const prevBtn = document.getElementById(prevId);
+    const nextBtn = document.getElementById(nextId);
+    if (!row || !prevBtn || !nextBtn) return;
+    let autoScroll;
+
+    function scroll(direction) {
+      const card = row.querySelector('.scroll-card');
+      if (!card) return;
+      const cardWidth = card.offsetWidth;
+      const gap = parseInt(window.getComputedStyle(row).gap) || 0;
+      const scrollAmount = cardWidth + gap;
+      let targetScroll = row.scrollLeft + (direction * scrollAmount);
+      
+      const maxScroll = row.scrollWidth - row.clientWidth;
+      if (direction === 1 && row.scrollLeft >= maxScroll - 10) targetScroll = 0;
+      else if (direction === -1 && row.scrollLeft <= 10) targetScroll = maxScroll;
+
+      row.scrollTo({ left: targetScroll, behavior: 'smooth' });
+    }
+
+    const startAuto = () => { clearInterval(autoScroll); if (autoScrollDelay) autoScroll = setInterval(() => scroll(1), autoScrollDelay); };
+    const stopAuto = () => clearInterval(autoScroll);
+
+    prevBtn.onclick = () => { scroll(-1); startAuto(); };
+    nextBtn.onclick = () => { scroll(1); startAuto(); };
+    row.addEventListener('mouseenter', stopAuto);
+    row.addEventListener('mouseleave', startAuto);
+    row.addEventListener('touchstart', stopAuto, {passive: true});
+    row.addEventListener('touchend', startAuto, {passive: true});
+    startAuto();
+  }
+
+  // === RENDER ENGINE ===
+  fetch('data.json')
+    .then(r => r.json())
+    .then(d => {
+      const phone = d.contact.phone;
+      const waLink = `https://wa.me/${phone}?text=${d.contact.whatsappMessage}`;
+      const callLink = `tel:${phone}`;
+
+      // Meta
+      document.getElementById('meta-title').textContent = d.seo.metaTitle;
+      document.getElementById('meta-desc').setAttribute('content', d.seo.metaDescription);
+
+      // Nav
+      document.getElementById('nav-name').textContent = d.businessName;
+      document.getElementById('nav-tagline').textContent = d.tagline;
+      ['nav-call','nav-call-mob'].forEach(id => { const el=document.getElementById(id); if(el){el.href=callLink;} });
+      document.getElementById('nav-wa').href = waLink;
+
+      // Hero
+      document.getElementById('hero-title').textContent = d.hero.title;
+      document.getElementById('hero-subtitle').textContent = d.hero.subtitle;
+      document.getElementById('hero-img').src = d.hero.image;
+      document.getElementById('hero-calltext').textContent = d.cta.callText;
+      ['hero-call','hero-wa'].forEach(id => {
+        const el = document.getElementById(id);
+        if(!el) return;
+        el.href = id.includes('wa') ? waLink : callLink;
+      });
+      const badgesEl = document.getElementById('hero-badges');
+      let badgesHTML = '';
+      d.hero.badges.forEach(b => {
+        badgesHTML += `<span class="bg-white bg-opacity-20 text-white text-xs font-semibold px-3 py-1 rounded-full">✓ ${b}</span>`;
+      });
+      badgesEl.innerHTML = badgesHTML;
+
+      // Stats
+      const sg = document.getElementById('stats-grid');
+      let statsHTML = '';
+      d.stats.forEach(s => {
+        statsHTML += `<div><div class="text-3xl font-bold">${s.value}</div><div class="text-blue-100 text-sm mt-1">${s.label}</div></div>`;
+      });
+      sg.innerHTML = statsHTML;
+
+      // Services
+      const svcG = document.getElementById('services-grid');
+      let svcHTML = '';
+      d.services.forEach(s => {
+        svcHTML += `
+          <div class="bg-white rounded-2xl overflow-hidden card-shadow hover:shadow-xl transition group">
+            <div class="relative"><img src="${s.image}" alt="${s.title} in Asansol" loading="lazy" class="w-full h-44 object-cover group-hover:scale-105 transition duration-300"/>
+            <span class="absolute top-3 right-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">${s.badge}</span></div>
+            <div class="p-6">
+              <div class="text-2xl mb-2">${s.icon}</div>
+              <h3 class="text-lg font-bold text-gray-900 mb-2">${s.title}</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">${s.description}</p>
+            </div>
+          </div>`;
+      });
+      svcG.innerHTML = svcHTML;
+      ['svc-call','svc-wa'].forEach(id => {
+        const el = document.getElementById(id);
+        if(el) el.href = id.includes('wa') ? waLink : callLink;
+      });
+
+      // Doctor
+      document.getElementById('doctor-img').src = d.doctor.image;
+      document.getElementById('doctor-name').textContent = d.doctor.name;
+      document.getElementById('doctor-qual').textContent = d.doctor.qualification;
+      document.getElementById('doctor-exp').textContent = d.doctor.experience;
+      document.getElementById('doctor-bio').textContent = d.doctor.bio;
+      ['doc-call','doc-wa'].forEach(id => {
+        const el = document.getElementById(id);
+        if(el) el.href = id.includes('wa') ? waLink : callLink;
+      });
+
+      // About
+      document.getElementById('about-img').src = d.about.image;
+      document.getElementById('about-title').textContent = d.about.title;
+      document.getElementById('about-text').textContent = d.about.text;
+      const aHL = document.getElementById('about-highlights');
+      let aboutHTML = '';
+      d.about.highlights.forEach(h => {
+        aboutHTML += `<li class="flex items-center gap-3 text-gray-700 text-sm"><span class="w-5 h-5 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>${h}</li>`;
+      });
+      aHL.innerHTML = aboutHTML;
+
+      // Before & After
+      document.getElementById('ba-title').textContent = d.beforeAfter.title;
+      document.getElementById('ba-subtitle').textContent = d.beforeAfter.subtitle;
+      const baScroll = document.getElementById('ba-scroll');
+      if (d.beforeAfter.cases) {
+        let baHTML = '';
+        d.beforeAfter.cases.forEach(c => {
+          baHTML += `
+            <div class="scroll-card w-full flex-shrink-0 relative">
+              <div class="text-center mb-2 text-xs font-bold text-blue-600 uppercase tracking-wide">${c.label}</div>
+              <div class="grid grid-cols-2 gap-2">
+                <div class="relative rounded-2xl overflow-hidden shadow-lg h-56 md:h-72">
+                  <img src="${c.before}" alt="Before ${c.label}" loading="lazy" class="w-full h-full object-cover"/>
+                  <div class="absolute bottom-0 left-0 right-0 bg-red-500 text-white text-center text-xs md:text-sm font-bold py-1.5 md:py-2">BEFORE</div>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-lg h-56 md:h-72">
+                  <img src="${c.after}" alt="After ${c.label}" loading="lazy" class="w-full h-full object-cover"/>
+                  <div class="absolute bottom-0 left-0 right-0 bg-green-500 text-white text-center text-xs md:text-sm font-bold py-1.5 md:py-2">AFTER</div>
+                </div>
+              </div>
+            </div>`;
+        });
+        baScroll.innerHTML = baHTML;
+      }
+
+      // Why Choose Us
+      const wg = document.getElementById('why-grid');
+      let whyHTML = '';
+      d.whyChooseUs.forEach(w => {
+        whyHTML += `<div class="bg-white bg-opacity-10 rounded-2xl p-6 text-white hover:bg-opacity-20 transition"><div class="text-3xl mb-3">${w.icon}</div><h3 class="font-bold mb-1">${w.title}</h3><p class="text-blue-100 text-sm">${w.desc}</p></div>`;
+      });
+      wg.innerHTML = whyHTML;
+
+      // Testimonials
+      const tg = document.getElementById('testimonials-grid');
+      let tgHTML = '';
+      d.testimonials.forEach(t => {
+        let stars = '★'.repeat(t.rating) + '☆'.repeat(5 - t.rating);
+        tgHTML += `
+          <div class="scroll-card w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 bg-white rounded-2xl p-6 card-shadow flex flex-col justify-between">
+            <div>
+              <div class="star text-sm mb-3">${stars}</div>
+              <p class="text-gray-600 text-xs md:text-sm leading-relaxed mb-5 italic">"${t.review}"</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <img src="${t.image}" alt="${t.name}" loading="lazy" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"/>
+              <div><div class="font-bold text-gray-900 text-xs md:text-sm">${t.name}</div><div class="text-gray-400 text-xs">${t.location}</div></div>
+            </div>
+          </div>`;
+      });
+      tg.innerHTML = tgHTML;
+      ['test-call','test-wa'].forEach(id => {
+        const el = document.getElementById(id);
+        if(el) el.href = id.includes('wa') ? waLink : callLink;
+      });
+
+      // Forms
+      setupForm(document.getElementById('contact-form'), d.formEmail);
+
+      // FAQ
+      const fl = document.getElementById('faq-list');
+      let faqHTML = '';
+      d.faq.forEach(f => {
+        faqHTML += `
+          <details class="bg-white border border-gray-100 rounded-xl shadow-sm">
+            <summary class="flex items-center justify-between px-6 py-4 font-semibold text-gray-900 text-sm md:text-base">
+              ${f.question}
+              <span class="faq-icon text-blue-500 text-xl font-bold ml-4 flex-shrink-0">+</span>
+            </summary>
+            <p class="px-6 pb-5 text-gray-500 text-sm leading-relaxed">${f.answer}</p>
+          </details>`;
+      });
+      fl.innerHTML = faqHTML;
+
+      // Contact
+      document.getElementById('c-address').textContent = d.contact.address;
+      
+      // Google Map Embed
+      const mapQuery = encodeURIComponent(d.businessName + ', ' + d.contact.address);
+      document.getElementById('contact-map').src = `https://maps.google.com/maps?q=${mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+
+      const cpl = document.getElementById('c-phone-link');
+      cpl.textContent = phone;
+      cpl.href = callLink;
+      document.getElementById('c-hours').textContent = d.contact.hours;
+      ['c-call','c-wa'].forEach(id => {
+        const el = document.getElementById(id);
+        if(el) el.href = id.includes('wa') ? waLink : callLink;
+      });
+
+      // Final CTA
+      document.getElementById('final-title').textContent = d.cta.sectionTitle;
+      document.getElementById('final-subtitle').textContent = d.cta.sectionSubtitle;
+      document.getElementById('final-hours').textContent = '⏰ ' + d.contact.hours + ' | 📍 ' + d.contact.address;
+      ['final-call','final-wa'].forEach(id => {
+        const el = document.getElementById(id);
+        if(el) el.href = id.includes('wa') ? waLink : callLink;
+      });
+
+      // Footer
+      document.getElementById('footer-name').textContent = d.businessName;
+      document.getElementById('footer-addr').textContent = d.contact.address;
+
+      // Init Carousels after DOM render
+      setTimeout(() => {
+        initCarousel('ba-scroll', 'ba-prev', 'ba-next', 4000);
+        initCarousel('testimonials-grid', 'test-prev', 'test-next', 5000);
+      }, 50);
+
+    })
+    .catch(e => console.error('Failed to load data.json', e));
+</script>
+</body>
+</html>

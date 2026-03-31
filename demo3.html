@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title id="meta-title">Strong Roots Dental Care – Best Dentist in Asansol</title>
+  <meta name="description" id="meta-desc" content=""/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" href="data.json" as="fetch" crossorigin="anonymous">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--navy:#0F172A;--gold:#C9A227;--gold-light:#F5E6B8;--gray:#E5E7EB;--text-light:#64748B;}
+    body{font-family:'Jost',sans-serif;background:#fff;color:var(--navy); opacity: 0; animation: fadeIn 0.4s ease-in forwards; animation-delay: 0.1s; }
+    @keyframes fadeIn { to { opacity: 1; } }
+    .headline{font-family:'Cormorant Garamond',serif;}
+    .btn-primary{background:var(--navy);color:#fff;letter-spacing:0.04em;}
+    .btn-primary:hover{background:#1e293b;}
+    .btn-gold{background:var(--gold);color:#fff;}
+    .btn-gold:hover{background:#b8911e;}
+    .btn-wa{background:#16a34a;color:#fff;}
+    .btn-wa:hover{background:#15803d;}
+    .btn-outline{border:1.5px solid var(--navy);color:var(--navy);}
+    .btn-outline:hover{background:var(--navy);color:#fff;}
+    .divider{width:48px;height:3px;background:var(--gold);margin:12px auto;}
+    .divider-left{margin-left:0;}
+    .tag{background:var(--gold-light);color:#92690a;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;border-radius:2px;padding:4px 12px;display:inline-block;margin-bottom:12px;}
+    .card{background:#fff;border:1px solid var(--gray);border-radius:4px;transition:box-shadow 0.2s;}
+    .card:hover{box-shadow:0 8px 32px rgba(15,23,42,0.10);}
+    .star{color:#C9A227;}
+    details summary{list-style:none;cursor:pointer;}
+    details summary::-webkit-details-marker{display:none;}
+    details[open] .faq-icon{transform:rotate(45deg);}
+    .faq-icon{transition:transform 0.2s;}
+    .gold-line{border-left:3px solid var(--gold);}
+    .scroll-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:1.5rem;padding-bottom:1rem;scrollbar-width:none;-ms-overflow-style:none;}
+    .scroll-row::-webkit-scrollbar{display:none;}
+    .scroll-card{scroll-snap-align:center;}
+    .carousel-nav-btn { position: absolute; top: 50%; transform: translateY(-50%); background: white; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; border: 1px solid #f3f4f6; color: #111827; font-weight: bold; z-index: 20; font-size: 1.25rem; transition: background 0.2s; }
+    .carousel-nav-btn:hover { background: #f9fafb; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    .prev-btn { left: -15px; } .next-btn { right: -15px; }
+    @media (min-width: 768px) { .prev-btn { left: -22px; } .next-btn { right: -22px; } }
+    .success-msg{display:none;margin-top:1rem;background:#d1fae5;color:#065f46;padding:0.75rem 1rem;border-radius:2px;text-align:center;font-weight:600;font-size:0.875rem;}
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-white border-b border-gray-100" style="box-shadow:0 1px 12px rgba(15,23,42,0.05)">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div>
+      <div class="font-bold text-base tracking-wide" style="color:var(--navy)" id="nav-name"></div>
+      <div class="text-xs tracking-widest uppercase" style="color:var(--gold)" id="nav-tagline"></div>
+    </div>
+    
+    <!-- Desktop Links -->
+    <div class="hidden lg:flex items-center gap-7 font-bold text-xs tracking-widest uppercase" style="color:var(--navy)">
+      <a href="#services" class="hover:opacity-70 transition">Services</a>
+      <a href="#about" class="hover:opacity-70 transition">About</a>
+      <a href="#results" class="hover:opacity-70 transition">Results</a>
+      <a href="#reviews" class="hover:opacity-70 transition">Reviews</a>
+      <a href="#faq" class="hover:opacity-70 transition">FAQ</a>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <a id="nav-call" href="#" class="hidden lg:flex btn-outline px-5 py-2 rounded text-sm font-semibold transition">📞 Call Now</a>
+      <a id="nav-wa" href="#" target="_blank" class="hidden lg:flex btn-wa px-5 py-2 rounded text-sm font-semibold transition">💬 WhatsApp</a>
+      <a id="nav-call-mob" href="#" class="lg:hidden btn-primary px-3 py-2 rounded text-sm font-semibold transition">📞 Call</a>
+      <button id="mobile-menu-btn" class="lg:hidden text-2xl px-2 ml-1 focus:outline-none" style="color:var(--navy)">&#9776;</button>
+    </div>
+  </div>
+  
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-xl py-4 px-6 flex flex-col gap-4 font-bold text-sm tracking-widest uppercase" style="color:var(--navy)">
+    <a href="#services" class="mobile-link hover:opacity-70 transition">Services</a>
+    <a href="#about" class="mobile-link hover:opacity-70 transition">About</a>
+    <a href="#results" class="mobile-link hover:opacity-70 transition">Results</a>
+    <a href="#reviews" class="mobile-link hover:opacity-70 transition">Reviews</a>
+    <a href="#faq" class="mobile-link hover:opacity-70 transition">FAQ</a>
+    <a href="#contact" class="mobile-link hover:opacity-70 transition">Contact Us</a>
+  </div>
+</nav>
+
+<script>
+  document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    });
+  });
+</script>
+
+<!-- HERO -->
+<section class="py-20 md:py-28 bg-white relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-1/3 h-full" style="background:linear-gradient(to left,#F8F3E4,transparent);"></div>
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+    <div>
+      <div class="tag">✦ Best Dental Clinic in Asansol</div>
+      <h1 class="headline text-4xl md:text-6xl font-bold leading-tight mt-2 mb-2" id="hero-title"></h1>
+      <div class="divider divider-left mb-5"></div>
+      <p class="text-base leading-relaxed mb-8" style="color:var(--text-light)" id="hero-subtitle"></p>
+      <div class="flex flex-wrap gap-2 mb-8" id="hero-badges"></div>
+      <div class="flex flex-wrap gap-3">
+        <a id="hero-call" href="#" class="btn-primary flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold transition">📞 <span id="hero-calltext"></span></a>
+        <a id="hero-wa" href="#" target="_blank" class="btn-wa flex items-center gap-2 px-7 py-3 rounded text-sm font-semibold transition">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span id="hero-watext"></span>
+        </a>
+      </div>
+    </div>
+    <div class="relative">
+      <img id="hero-img" src="" alt="Best dental clinic Asansol" fetchpriority="high" class="w-full h-80 md:h-[460px] object-cover" style="border-radius:2px;box-shadow:0 24px 64px rgba(15,23,42,0.15)"/>
+      <div class="absolute -bottom-6 -left-5 bg-white p-4 shadow-xl" style="border-left:4px solid var(--gold);border-radius:2px;">
+        <div class="font-bold" style="color:var(--navy)">⭐ 4.9 / 5.0</div>
+        <div class="text-xs" style="color:var(--text-light)">Google Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="py-10" style="background:var(--navy);">
+  <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center" id="stats-grid"></div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-20" style="background:#FAFAF8;" id="services">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <div class="tag">Treatments</div>
+      <h2 class="headline text-3xl md:text-4xl font-bold mt-2" style="color:var(--navy)">Precision Care.<br/><span style="color:var(--gold)">Proven Results.</span></h2>
+      <div class="divider"></div>
+      <p class="mt-2 max-w-lg mx-auto text-sm" style="color:var(--text-light)">Each treatment is tailored to your unique needs — with outcomes that speak for themselves.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8" id="services-grid"></div>
+    <div class="mt-14 text-center flex flex-wrap justify-center gap-4">
+      <a id="svc-call" href="#" class="btn-primary px-8 py-3 rounded text-sm font-semibold transition">📞 Call Now</a>
+      <a id="svc-wa" href="#" target="_blank" class="btn-wa px-8 py-3 rounded text-sm font-semibold transition">💬 WhatsApp Chat</a>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR -->
+<section class="py-20" style="background:rgba(201,162,39,0.05);" id="doctor">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <div class="tag">The Specialist</div>
+      <h2 class="headline text-3xl font-bold mt-2" style="color:var(--navy)">Meet Your Doctor</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="grid md:grid-cols-5 gap-10 items-center">
+      <div class="md:col-span-2">
+        <img id="doctor-img" src="" alt="Doctor at Strong Roots Dental Care Asansol" loading="lazy" class="w-full h-80 object-cover" style="box-shadow:0 12px 48px rgba(15,23,42,0.12);"/>
+      </div>
+      <div class="md:col-span-3 gold-line pl-8">
+        <h3 class="headline text-2xl font-bold" style="color:var(--navy)" id="doctor-name"></h3>
+        <p class="font-semibold mt-1 mb-3" style="color:var(--gold)" id="doctor-qual"></p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="text-xs font-semibold px-3 py-1 border" style="border-color:var(--gold);color:var(--gold);" id="doctor-exp"></span>
+          <span class="text-xs font-semibold px-3 py-1 border border-gray-300 text-gray-500">Certified Specialist</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:var(--text-light)" id="doctor-bio"></p>
+        <div class="flex gap-3 mt-6">
+          <a id="doc-call" href="#" class="btn-primary px-6 py-2 rounded text-sm font-semibold transition">📞 Book Appointment</a>
+          <a id="doc-wa" href="#" target="_blank" class="btn-wa px-6 py-2 rounded text-sm font-semibold transition">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-20" style="background:#FAFAF8;" id="about">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+    <div>
+      <div class="tag">Our Clinic</div>
+      <h2 class="headline text-3xl font-bold mt-2 mb-3" style="color:var(--navy)" id="about-title"></h2>
+      <div class="divider divider-left mb-5"></div>
+      <p class="text-sm leading-relaxed mb-6" style="color:var(--text-light)" id="about-text"></p>
+      <ul class="space-y-3" id="about-highlights"></ul>
+    </div>
+    <img id="about-img" src="" alt="Dental clinic Asansol" loading="lazy" class="w-full h-80 object-cover" style="box-shadow:0 12px 40px rgba(15,23,42,0.10);"/>
+  </div>
+</section>
+
+<!-- BEFORE & AFTER -->
+<section class="py-16" style="background:rgba(201,162,39,0.05);" id="results">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-10">
+      <div class="tag">Transformations</div>
+      <h2 class="headline text-3xl font-bold mt-2" style="color:var(--navy)" id="ba-title"></h2>
+      <div class="divider"></div>
+      <p class="text-sm" style="color:var(--text-light)" id="ba-subtitle"></p>
+    </div>
+    <div class="relative max-w-4xl mx-auto px-2 md:px-8">
+      <button id="ba-prev" class="carousel-nav-btn prev-btn">&#8592;</button>
+      <div class="scroll-row" id="ba-scroll"></div>
+      <button id="ba-next" class="carousel-nav-btn next-btn">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="py-20" style="background:var(--navy);">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="headline text-3xl font-bold text-white">Why Discerning Patients<br/><em class="not-italic" style="color:var(--gold)">Choose Strong Roots</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6" id="why-grid"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-20" style="background:#FAFAF8;" id="reviews">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <div class="tag">Testimonials</div>
+      <h2 class="headline text-3xl font-bold mt-2" style="color:var(--navy)">In Their Own Words</h2>
+      <div class="divider"></div>
+      <div class="flex justify-center gap-1 mt-2">
+        <span class="star text-lg">★★★★★</span>
+        <span class="text-sm ml-1 mt-0.5" style="color:var(--text-light)">4.9 / 5 Google Rating</span>
+      </div>
+    </div>
+    <div class="relative px-2 md:px-6">
+      <button id="test-prev" class="carousel-nav-btn prev-btn">&#8592;</button>
+      <div class="scroll-row" id="testimonials-grid"></div>
+      <button id="test-next" class="carousel-nav-btn next-btn">&#8594;</button>
+    </div>
+    <div class="mt-14 text-center flex flex-wrap justify-center gap-4">
+      <a id="test-call" href="#" class="btn-primary px-8 py-3 rounded text-sm font-semibold transition">📞 Book Appointment</a>
+      <a id="test-wa" href="#" target="_blank" class="btn-wa px-8 py-3 rounded text-sm font-semibold transition">💬 Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section class="py-20" style="background:rgba(201,162,39,0.05);" id="faq">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-10">
+      <div class="tag">FAQ</div>
+      <h2 class="headline text-3xl font-bold mt-2" style="color:var(--navy)">Frequently Asked Questions</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="space-y-3" id="faq-list"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="py-20" style="background:#FAFAF8;" id="contact">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <div class="tag">Contact</div>
+      <h2 class="headline text-3xl font-bold mt-2" style="color:var(--navy)">We're Here for You</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12">
+      <div class="space-y-5">
+        <div class="bg-white border border-gray-100 p-6" style="border-left:4px solid var(--gold);"><div class="text-2xl mb-2">📍</div><div class="font-semibold mb-1" style="color:var(--navy)">Location</div><div class="text-sm" style="color:var(--text-light)" id="c-address"></div></div>
+        <div class="bg-white border border-gray-100 p-6" style="border-left:4px solid var(--gold);"><div class="text-2xl mb-2">📞</div><div class="font-semibold mb-1" style="color:var(--navy)">Call / WhatsApp</div><a id="c-phone-link" href="#" class="font-bold text-lg" style="color:var(--gold)"></a></div>
+        <div class="bg-white border border-gray-100 p-6" style="border-left:4px solid var(--gold);"><div class="text-2xl mb-2">⏰</div><div class="font-semibold mb-1" style="color:var(--navy)">Hours</div><div class="text-sm" style="color:var(--text-light)" id="c-hours"></div></div>
+        <div class="flex gap-3">
+          <a id="c-call" href="#" class="flex-1 btn-primary py-3 text-center font-semibold text-sm transition rounded">📞 Call Now</a>
+          <a id="c-wa" href="#" target="_blank" class="flex-1 btn-wa py-3 text-center font-semibold text-sm transition rounded">💬 WhatsApp</a>
+        </div>
+      </div>
+      <form id="contact-form" class="bg-white border border-gray-100 p-8 space-y-4">
+        <input type="hidden" name="_captcha" value="false"/>
+  
+        <input type="hidden" name="_subject" value="New Patient Inquiry"/>
+        <div><label class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-1 block">Full Name *</label><input type="text" name="name" required placeholder="Your Name" class="w-full border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-200"/></div>
+        <div><label class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-1 block">Phone *</label><input type="tel" name="phone" required placeholder="Your Phone" class="w-full border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-200"/></div>
+        <div><label class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-1 block">Email</label><input type="email" name="email" placeholder="your@email.com" class="w-full border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-200"/></div>
+        <div><label class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-1 block">Message</label><textarea name="message" rows="4" placeholder="Describe your concern..." class="w-full border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-200"></textarea></div>
+        <button type="submit" class="w-full btn-primary py-3 font-bold text-sm tracking-widest uppercase transition hover:opacity-90">Send Message →</button>
+      </form>
+      <div class="success-msg">✅ Thank you! We'll reach back to you shortly.</div>
+    </div>
+    
+    <!-- GOOGLE MAP -->
+    <div class="mt-12 overflow-hidden shadow-xl h-72 md:h-96 w-full bg-gray-200" style="border-radius:2px;border:1px solid #e5e7eb;">
+      <iframe id="contact-map" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="py-20 text-center" style="background:var(--navy);">
+  <div class="max-w-2xl mx-auto px-6">
+    <div class="tag" style="background:rgba(201,162,39,0.15);color:var(--gold);">Take Action</div>
+    <h2 class="headline text-3xl md:text-4xl font-bold text-white mt-2 mb-3" id="final-title"></h2>
+    <div class="divider"></div>
+    <p class="text-gray-400 mb-8 text-sm" id="final-subtitle"></p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a id="final-call" href="#" class="bg-white font-bold px-8 py-3 rounded text-sm tracking-wide transition hover:bg-gray-100" style="color:var(--navy)">📞 Call Now</a>
+      <a id="final-wa" href="#" target="_blank" class="btn-wa px-8 py-3 rounded text-sm font-bold tracking-wide transition">💬 WhatsApp Chat</a>
+    </div>
+    <div class="mt-6 text-xs tracking-wide" style="color:var(--text-light)" id="final-hours"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#060f1e;color:#94a3b8;" class="py-8 text-center text-sm">
+  <div class="text-white font-bold mb-1" id="footer-name"></div>
+  <div id="footer-addr"></div>
+  <div class="mt-4 text-xs opacity-50">Best Dentist in Asansol | Root Canal Asansol | Dental Implants Burnpur | Teeth Whitening Asansol</div>
+</footer>
+
+<script>
+  function setupForm(formEl, email) {
+    if (!formEl) return;
+    formEl.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = formEl.querySelector('button[type="submit"]');
+      const origText = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      fetch(`https://formsubmit.co/ajax/${email}`, {
+        method: 'POST',
+        body: new FormData(formEl),
+        headers: { 'Accept': 'application/json' }
+      }).then(() => {
+        formEl.reset(); btn.textContent = origText; btn.disabled = false;
+        const msg = formEl.parentElement.querySelector('.success-msg');
+        if (msg) { msg.style.display = 'block'; setTimeout(() => msg.style.display = 'none', 6000); }
+      }).catch(() => {
+        formEl.reset(); btn.textContent = origText; btn.disabled = false;
+        const msg = formEl.parentElement.querySelector('.success-msg');
+        if (msg) { msg.style.display = 'block'; setTimeout(() => msg.style.display = 'none', 6000); }
+      });
+    });
+  }
+
+  function initCarousel(rowId, prevId, nextId, autoScrollDelay) {
+    const row = document.getElementById(rowId);
+    const prevBtn = document.getElementById(prevId);
+    const nextBtn = document.getElementById(nextId);
+    if (!row || !prevBtn || !nextBtn) return;
+    let autoScroll;
+
+    function scroll(direction) {
+      const card = row.querySelector('.scroll-card');
+      if (!card) return;
+      const cardWidth = card.offsetWidth;
+      const gap = parseInt(window.getComputedStyle(row).gap) || 0;
+      const scrollAmount = cardWidth + gap;
+      let targetScroll = row.scrollLeft + (direction * scrollAmount);
+      
+      const maxScroll = row.scrollWidth - row.clientWidth;
+      if (direction === 1 && row.scrollLeft >= maxScroll - 10) targetScroll = 0;
+      else if (direction === -1 && row.scrollLeft <= 10) targetScroll = maxScroll;
+
+      row.scrollTo({ left: targetScroll, behavior: 'smooth' });
+    }
+
+    const startAuto = () => { clearInterval(autoScroll); if (autoScrollDelay) autoScroll = setInterval(() => scroll(1), autoScrollDelay); };
+    const stopAuto = () => clearInterval(autoScroll);
+
+    prevBtn.onclick = () => { scroll(-1); startAuto(); };
+    nextBtn.onclick = () => { scroll(1); startAuto(); };
+    row.addEventListener('mouseenter', stopAuto);
+    row.addEventListener('mouseleave', startAuto);
+    row.addEventListener('touchstart', stopAuto, {passive: true});
+    row.addEventListener('touchend', startAuto, {passive: true});
+    startAuto();
+  }
+
+  fetch('data.json')
+    .then(r=>r.json())
+    .then(d=>{
+      const phone=d.contact.phone;
+      const waLink=`https://wa.me/${phone}?text=${d.contact.whatsappMessage}`;
+      const callLink=`tel:${phone}`;
+
+      document.getElementById('meta-title').textContent=d.seo.metaTitle;
+      document.getElementById('meta-desc').setAttribute('content',d.seo.metaDescription);
+      document.getElementById('nav-name').textContent=d.businessName;
+      document.getElementById('nav-tagline').textContent=d.tagline;
+      ['nav-call','nav-call-mob'].forEach(id=>{const el=document.getElementById(id);if(el)el.href=callLink;});
+      document.getElementById('nav-wa').href=waLink;
+
+      document.getElementById('hero-title').textContent=d.hero.title;
+      document.getElementById('hero-subtitle').textContent=d.hero.subtitle;
+      document.getElementById('hero-img').src=d.hero.image;
+      document.getElementById('hero-calltext').textContent=d.cta.callText;
+      document.getElementById('hero-call').href=callLink;
+      document.getElementById('hero-wa').href=waLink;
+      document.getElementById('hero-watext').textContent=d.cta.whatsappText;
+      const badgesEl=document.getElementById('hero-badges');
+      let badgesHTML='';
+      d.hero.badges.forEach(b=>{badgesHTML+=`<span class="text-xs font-semibold px-3 py-1 border" style="border-color:var(--gold);color:var(--gold);">✦ ${b}</span>`;});
+      badgesEl.innerHTML=badgesHTML;
+
+      const sg=document.getElementById('stats-grid');
+      let statsHTML='';
+      d.stats.forEach(s=>{statsHTML+=`<div><div class="text-3xl font-bold text-white">${s.value}</div><div class="text-xs tracking-widest uppercase mt-1" style="color:var(--gold)">${s.label}</div></div>`;});
+      sg.innerHTML=statsHTML;
+
+      const svcG=document.getElementById('services-grid');
+      let svcHTML='';
+      d.services.forEach(s=>{
+        svcHTML+=`
+          <div class="card overflow-hidden">
+            <div class="relative"><img src="${s.image}" alt="${s.title} Asansol" loading="lazy" class="w-full h-44 object-cover"/>
+            <span class="absolute top-3 left-3 text-xs font-bold px-3 py-1" style="background:var(--gold);color:#fff;">${s.badge}</span></div>
+            <div class="p-6 border-t border-gray-100"><div class="text-2xl mb-2">${s.icon}</div><h3 class="text-lg font-bold mb-2" style="color:var(--navy)">${s.title}</h3><p class="text-sm leading-relaxed" style="color:var(--text-light)">${s.description}</p></div>
+          </div>`;
+      });
+      svcG.innerHTML=svcHTML;
+      document.getElementById('svc-call').href=callLink;
+      document.getElementById('svc-wa').href=waLink;
+
+      document.getElementById('doctor-img').src=d.doctor.image;
+      document.getElementById('doctor-name').textContent=d.doctor.name;
+      document.getElementById('doctor-qual').textContent=d.doctor.qualification;
+      document.getElementById('doctor-exp').textContent=d.doctor.experience;
+      document.getElementById('doctor-bio').textContent=d.doctor.bio;
+      document.getElementById('doc-call').href=callLink;
+      document.getElementById('doc-wa').href=waLink;
+
+      document.getElementById('about-img').src=d.about.image;
+      document.getElementById('about-title').textContent=d.about.title;
+      document.getElementById('about-text').textContent=d.about.text;
+      const aHL=document.getElementById('about-highlights');
+      let aHLHTML='';
+      d.about.highlights.forEach(h=>{aHLHTML+=`<li class="flex items-center gap-3 text-sm" style="color:var(--text-light)"><span class="flex-shrink-0 font-bold" style="color:var(--gold)">✦</span>${h}</li>`;});
+      aHL.innerHTML=aHLHTML;
+
+      document.getElementById('ba-title').textContent=d.beforeAfter.title;
+      document.getElementById('ba-subtitle').textContent=d.beforeAfter.subtitle;
+      const baScroll=document.getElementById('ba-scroll');
+      if(d.beforeAfter.cases){
+        let baHTML='';
+        d.beforeAfter.cases.forEach(c=>{
+          baHTML+=`
+            <div class="scroll-card w-full flex-shrink-0 relative">
+              <div class="text-center mb-2 text-xs font-bold uppercase tracking-widest" style="color:var(--gold)">${c.label}</div>
+              <div class="grid grid-cols-2 gap-2">
+                <div class="relative overflow-hidden h-56 md:h-72" style="border-radius:2px;">
+                  <img src="${c.before}" alt="Before ${c.label}" loading="lazy" class="w-full h-full object-cover"/>
+                  <div class="absolute bottom-0 left-0 right-0 bg-gray-800 text-white text-center text-xs md:text-sm font-bold py-1.5 md:py-2 tracking-widest uppercase">Before</div>
+                </div>
+                <div class="relative overflow-hidden h-56 md:h-72" style="border-radius:2px;">
+                  <img src="${c.after}" alt="After ${c.label}" loading="lazy" class="w-full h-full object-cover"/>
+                  <div class="absolute bottom-0 left-0 right-0 text-white text-center text-xs md:text-sm font-bold py-1.5 md:py-2 tracking-widest uppercase" style="background:var(--gold)">After</div>
+                </div>
+              </div>
+            </div>`;
+        });
+        baScroll.innerHTML=baHTML;
+      }
+
+      const wg=document.getElementById('why-grid');
+      let wgHTML='';
+      d.whyChooseUs.forEach(w=>{wgHTML+=`<div class="bg-white bg-opacity-5 border border-white border-opacity-10 p-6 hover:bg-opacity-10 transition"><div class="text-3xl mb-3">${w.icon}</div><h3 class="font-bold text-white text-sm mb-1">${w.title}</h3><p class="text-xs" style="color:#94a3b8">${w.desc}</p></div>`;});
+      wg.innerHTML=wgHTML;
+
+      const tg=document.getElementById('testimonials-grid');
+      let tgHTML='';
+      d.testimonials.forEach(t=>{
+        let stars='★'.repeat(t.rating)+'☆'.repeat(5-t.rating);
+        tgHTML+=`
+          <div class="scroll-card w-full md:w-[calc(33.333%-1rem)] flex-shrink-0 card p-6 flex flex-col justify-between">
+            <div>
+              <div class="star text-sm mb-4">${stars}</div>
+              <p class="text-xs md:text-sm leading-relaxed mb-5 italic" style="color:var(--text-light)">"${t.review}"</p>
+            </div>
+            <div class="flex items-center gap-3 border-t border-gray-100 pt-4">
+              <img src="${t.image}" alt="${t.name}" loading="lazy" class="w-10 h-10 md:w-12 md:h-12 object-cover" style="border-radius:50%;"/>
+              <div><div class="font-bold text-xs md:text-sm" style="color:var(--navy)">${t.name}</div><div class="text-xs" style="color:var(--text-light)">${t.location}</div></div>
+            </div>
+          </div>`;
+      });
+      tg.innerHTML=tgHTML;
+      document.getElementById('test-call').href=callLink;
+      document.getElementById('test-wa').href=waLink;
+
+      setupForm(document.getElementById('contact-form'),d.formEmail);
+
+      const fl=document.getElementById('faq-list');
+      let flHTML='';
+      d.faq.forEach(f=>{
+        flHTML+=`
+          <details class="border border-gray-100 bg-white" style="border-radius:2px;">
+            <summary class="flex items-center justify-between px-6 py-4 font-semibold text-sm" style="color:var(--navy)">
+              ${f.question}
+              <span class="faq-icon text-xl font-bold ml-4 flex-shrink-0" style="color:var(--gold)">+</span>
+            </summary>
+            <p class="px-6 pb-5 text-sm leading-relaxed" style="color:var(--text-light)">${f.answer}</p>
+          </details>`;
+      });
+      fl.innerHTML=flHTML;
+
+      document.getElementById('c-address').textContent=d.contact.address;
+      
+      // Google Map Embed
+      const mapQuery = encodeURIComponent(d.businessName + ', ' + d.contact.address);
+      document.getElementById('contact-map').src = `https://maps.google.com/maps?q=${mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+
+      const cpl=document.getElementById('c-phone-link');
+      cpl.textContent=phone; cpl.href=callLink;
+      document.getElementById('c-hours').textContent=d.contact.hours;
+      document.getElementById('c-call').href=callLink;
+      document.getElementById('c-wa').href=waLink;
+
+      document.getElementById('final-title').textContent=d.cta.sectionTitle;
+      document.getElementById('final-subtitle').textContent=d.cta.sectionSubtitle;
+      document.getElementById('final-hours').textContent='⏰ '+d.contact.hours+'  ·  📍 '+d.contact.address;
+      document.getElementById('final-call').href=callLink;
+      document.getElementById('final-wa').href=waLink;
+      document.getElementById('footer-name').textContent=d.businessName;
+      document.getElementById('footer-addr').textContent=d.contact.address;
+
+      setTimeout(() => {
+        initCarousel('ba-scroll', 'ba-prev', 'ba-next', 4000);
+        initCarousel('testimonials-grid', 'test-prev', 'test-next', 5000);
+      }, 50);
+    })
+    .catch(e=>console.error('data.json load error',e));
+</script>
+</body>
+</html>

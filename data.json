@@ -1,0 +1,190 @@
+{
+  "businessName": "Strong Roots Dental Care",
+  "tagline": "Best Dental Clinic in Asansol",
+  "formEmail": "editverse.info@gmail.com",
+  "contact": {
+    "phone": "7029566286",
+    "address": "Rabindra Nagar, Burnpur, Asansol, West Bengal",
+    "hours": "Open Daily · 9:00 AM – 9:00 PM",
+    "whatsappMessage": "Hi%2C%20I%20want%20to%20book%20a%20dental%20appointment%20at%20Strong%20Roots%20Dental%20Care.%20Please%20share%20available%20slots."
+  },
+  "hero": {
+    "title": "Pain-Free Dental Treatment in Asansol",
+    "subtitle": "Trusted by 5,000+ patients across Asansol & Burnpur. Advanced dental care that's safe, painless, and affordable.",
+    "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200",
+    "badges": ["1000+ Happy Patients", "10+ Years Experience", "Modern Equipment", "Painless Treatments"]
+  },
+  "stats": [
+    { "value": "5000+", "label": "Treatments Completed" },
+    { "value": "10+", "label": "Years Experience" },
+    { "value": "1000+", "label": "Happy Patients" },
+    { "value": "98%", "label": "Patient Satisfaction" }
+  ],
+  "services": [
+    {
+      "title": "Root Canal Treatment (RCT)",
+      "description": "Say goodbye to tooth pain permanently. Our painless, single-visit RCT uses modern rotary technology so you leave the clinic pain-free and smiling.",
+      "icon": "🦷",
+      "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80",
+      "badge": "Pain-Free"
+    },
+    {
+      "title": "Dental Implants & Tooth Replacement",
+      "description": "Regain your confident smile with natural-looking implants that last a lifetime. Safe, durable, and indistinguishable from real teeth.",
+      "icon": "✨",
+      "image": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80",
+      "badge": "Lifetime Results"
+    },
+    {
+      "title": "Teeth Cleaning, Whitening & Cosmetic Dentistry",
+      "description": "Brighten your smile in just one visit. Professional cleaning removes stubborn stains while whitening treatments give you the radiant smile you deserve.",
+      "icon": "🌟",
+      "image": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80",
+      "badge": "Quick & Visible Results"
+    }
+  ],
+  "doctor": {
+    "name": "Dr. [Doctor Name]",
+    "qualification": "BDS, MDS – Oral Surgery",
+    "experience": "10+ Years",
+    "bio": "A highly experienced dental surgeon dedicated to providing painless, high-quality dental care to every patient. Known for a gentle approach and precision in complex procedures, Dr. [Name] has helped thousands of patients across Asansol reclaim their smiles and confidence.",
+    "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80"
+  },
+  "about": {
+    "title": "Why Patients Trust Strong Roots Dental Care",
+    "text": "Strong Roots Dental Care is a trusted dental clinic in Asansol with a strong reputation for quality treatment and patient care. With experienced professionals and modern equipment, the clinic ensures safe, painless, and effective dental solutions. Serving Asansol and nearby areas with reliability and care.",
+    "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
+    "highlights": ["Certified & Licensed Professionals", "Modern Sterilized Equipment", "Painless Treatment Technology", "Affordable EMI Options Available"]
+  },
+  "beforeAfter": {
+    "title": "Real Results from Real Patients",
+    "subtitle": "See the transformations our patients experience",
+    "cases": [
+      {
+        "before": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80",
+        "after": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80",
+        "label": "Root Canal Treatment"
+      },
+      {
+        "before": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80",
+        "after": "https://images.unsplash.com/photo-1581585lite-7228f2d?w=600&q=80",
+        "label": "Teeth Whitening"
+      },
+      {
+        "before": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+        "after": "https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=600&q=80",
+        "label": "Dental Implants"
+      },
+      {
+        "before": "https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=600&q=80",
+        "after": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&q=80",
+        "label": "Smile Makeover"
+      },
+      {
+        "before": "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=600&q=80",
+        "after": "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?w=600&q=80",
+        "label": "Teeth Cleaning"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Priya Sharma",
+      "location": "Burnpur, Asansol",
+      "review": "I was terrified of dental procedures, but Dr. [Name] made the entire root canal completely painless. I couldn't believe it! The clinic is so clean and professional. Highly recommended!",
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80"
+    },
+    {
+      "name": "Rahul Gupta",
+      "location": "Asansol",
+      "review": "Got my dental implant done here. The result looks so natural, nobody can tell the difference. The staff is friendly and the pricing is fair. Best dental clinic in Asansol!",
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80"
+    },
+    {
+      "name": "Meena Das",
+      "location": "Rabindra Nagar",
+      "review": "My teeth whitening results exceeded my expectations. Just one session and I could see a huge difference. The doctors are very experienced and caring. Will definitely return!",
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80"
+    },
+    {
+      "name": "Amit Banerjee",
+      "location": "Burnpur",
+      "review": "Had my wisdom tooth removed here. Zero pain during the procedure and very quick recovery. The doctor explained everything clearly beforehand. Very reassuring experience!",
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80"
+    },
+    {
+      "name": "Sonia Patel",
+      "location": "Kulti, Asansol",
+      "review": "I brought my 7-year-old daughter for her first dental checkup. The staff was so gentle and patient with her. She actually wants to come back! The clinic is spotless and very child-friendly.",
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80"
+    },
+    {
+      "name": "Rajesh Kumar Singh",
+      "location": "Hirapur, Asansol",
+      "review": "Was suffering from severe tooth pain for weeks. Dr. treated it in a single sitting with a root canal. Absolutely painless! The pricing was also very transparent with no hidden charges.",
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80"
+    },
+    {
+      "name": "Kavita Ghosh",
+      "location": "Raniganj",
+      "review": "Got complete dental implants for my upper jaw. The result has been life-changing — I can eat normally again after years. The EMI option made it affordable. Thank you Strong Roots team!",
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80"
+    },
+    {
+      "name": "Debasish Mondal",
+      "location": "Jamuria, Asansol",
+      "review": "Professional service from start to finish. Got teeth cleaning and a filling done in one visit. The hygienists are very thorough. Best dental experience I have had in this area.",
+      "rating": 5,
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80"
+    }
+  ],
+  "whyChooseUs": [
+    { "icon": "🛡️", "title": "100% Safe & Hygienic", "desc": "Sterilized instruments and strict infection control protocols" },
+    { "icon": "💊", "title": "Painless Procedures", "desc": "Advanced anesthesia and modern tools for zero discomfort" },
+    { "icon": "⏰", "title": "Flexible Hours", "desc": "Open daily 9 AM – 9 PM for your convenience" },
+    { "icon": "💰", "title": "Affordable Pricing", "desc": "Transparent pricing with easy EMI options" },
+    { "icon": "🏆", "title": "Experienced Team", "desc": "10+ years of trusted dental expertise in Asansol" },
+    { "icon": "📍", "title": "Centrally Located", "desc": "Easy to reach from all parts of Asansol & Burnpur" }
+  ],
+  "faq": [
+    {
+      "question": "Is the dental treatment painful?",
+      "answer": "No! We use modern anesthesia and painless techniques. Most patients are surprised at how comfortable our procedures are. We prioritize your comfort at every step."
+    },
+    {
+      "question": "How much does treatment cost?",
+      "answer": "Treatment costs vary depending on the procedure. We offer transparent pricing with no hidden charges. Call us or visit for a free consultation and cost estimate. EMI options are also available."
+    },
+    {
+      "question": "How long does the treatment take?",
+      "answer": "Many procedures like cleanings and fillings are completed in a single visit (30–60 mins). Root canal and implants may take 2–3 visits. We'll give you a clear timeline before starting."
+    },
+    {
+      "question": "Is dental treatment safe for children and elderly?",
+      "answer": "Absolutely. We provide safe, age-appropriate dental care for patients of all ages — from young children to senior citizens. Our team is trained to handle all patient groups with care."
+    },
+    {
+      "question": "Do I need an appointment or can I walk in?",
+      "answer": "Both are welcome! Walk-ins are accepted, but we recommend booking an appointment to minimize your waiting time. Call or WhatsApp us to book instantly."
+    }
+  ],
+  "cta": {
+    "callText": "Call Now",
+    "whatsappText": "WhatsApp Us",
+    "bookText": "Book Free Consultation",
+    "sectionTitle": "Ready to Reclaim Your Perfect Smile?",
+    "sectionSubtitle": "Book a free consultation today. Walk in or call — we're here for you daily from 9 AM to 9 PM."
+  },
+  "seo": {
+    "metaTitle": "Strong Roots Dental Care – Best Dentist in Asansol | Painless Dental Treatment",
+    "metaDescription": "Top-rated dental clinic in Asansol offering Root Canal, Dental Implants, Teeth Whitening & more. 5000+ patients treated. Book free consultation today!",
+    "keywords": "best dentist in Asansol, dental clinic Asansol, root canal Asansol, dental implants Burnpur, teeth whitening Asansol"
+  }
+}
