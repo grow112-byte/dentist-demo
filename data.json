@@ -66,13 +66,13 @@
         "label": "Root Canal Treatment"
       },
       {
-        "before": "teeth_whitening_before.png",
-        "after": "teeth_whitening_after.png",
+        "before": "teeth_whitening_before.jpg",
+        "after": "teeth_whitening_after.jpg",
         "label": "Teeth Whitening"
       },
       {
-        "before": "dental_implants_before.png",
-        "after": "dental_implants_after.png",
+        "before": "dental_implants_before.jpg",
+        "after": "dental_implants_after.jpg",
         "label": "Dental Implants"
       },
       {
