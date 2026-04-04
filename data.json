@@ -1,16 +1,16 @@
 {
-  "businessName": "Strong Roots Dental Care",
-  "tagline": "Best Dental Clinic in Asansol",
+  "businessName": "Smile Tree Dental Clinic",
+  "tagline": "Best Dental Clinic in Kajora",
   "formEmail": "editverse.info@gmail.com",
   "contact": {
     "phone": "7029566286",
-    "address": "Rabindra Nagar, Burnpur, Asansol, West Bengal",
-    "hours": "Open Daily · 9:00 AM – 9:00 PM",
-    "whatsappMessage": "Hi%2C%20I%20want%20to%20book%20a%20dental%20appointment%20at%20Strong%20Roots%20Dental%20Care.%20Please%20share%20available%20slots."
+    "address": "Kajora Main Rd, Khas Kajora Colliery, West Bengal 713338",
+    "hours": "Open Daily · 11:00 AM – 8:00 PM",
+    "whatsappMessage": "Hi%2C%20I%20want%20to%20book%20a%20dental%20appointment%20at%20Smile%20Tree%20Dental%20Clinic.%20Please%20share%20available%20slots."
   },
   "hero": {
-    "title": "Pain-Free Dental Treatment in Asansol",
-    "subtitle": "Trusted by 5,000+ patients across Asansol & Burnpur. Advanced dental care that's safe, painless, and affordable.",
+    "title": "Pain-Free Dental Treatment in Kajora",
+    "subtitle": "Trusted by 5,000+ patients across Kajora & Raniganj. Advanced dental care that's safe, painless, and affordable.",
     "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200",
     "badges": ["1000+ Happy Patients", "10+ Years Experience", "Modern Equipment", "Painless Treatments"]
   },
@@ -47,12 +47,12 @@
     "name": "Dr. [Doctor Name]",
     "qualification": "BDS, MDS – Oral Surgery",
     "experience": "10+ Years",
-    "bio": "A highly experienced dental surgeon dedicated to providing painless, high-quality dental care to every patient. Known for a gentle approach and precision in complex procedures, Dr. [Name] has helped thousands of patients across Asansol reclaim their smiles and confidence.",
+    "bio": "A highly experienced dental surgeon dedicated to providing painless, high-quality dental care to every patient. Known for a gentle approach and precision in complex procedures, Dr. [Name] has helped thousands of patients across Kajora reclaim their smiles and confidence.",
     "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80"
   },
   "about": {
-    "title": "Why Patients Trust Strong Roots Dental Care",
-    "text": "Strong Roots Dental Care is a trusted dental clinic in Asansol with a strong reputation for quality treatment and patient care. With experienced professionals and modern equipment, the clinic ensures safe, painless, and effective dental solutions. Serving Asansol and nearby areas with reliability and care.",
+    "title": "Why Patients Trust Smile Tree Dental Clinic",
+    "text": "Smile Tree Dental Clinic is a trusted dental clinic in Kajora with a strong reputation for quality treatment and patient care. With experienced professionals and modern equipment, the clinic ensures safe, painless, and effective dental solutions. Serving Kajora and nearby areas with reliability and care.",
     "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
     "highlights": ["Certified & Licensed Professionals", "Modern Sterilized Equipment", "Painless Treatment Technology", "Affordable EMI Options Available"]
   },
@@ -90,42 +90,42 @@
   "testimonials": [
     {
       "name": "Priya Sharma",
-      "location": "Burnpur, Asansol",
+      "location": "Kajora, West Bengal",
       "review": "I was terrified of dental procedures, but Dr. [Name] made the entire root canal completely painless. I couldn't believe it! The clinic is so clean and professional. Highly recommended!",
       "rating": 5,
       "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80"
     },
     {
       "name": "Rahul Gupta",
-      "location": "Asansol",
-      "review": "Got my dental implant done here. The result looks so natural, nobody can tell the difference. The staff is friendly and the pricing is fair. Best dental clinic in Asansol!",
+      "location": "Raniganj",
+      "review": "Got my dental implant done here. The result looks so natural, nobody can tell the difference. The staff is friendly and the pricing is fair. Best dental clinic in the Kajora area!",
       "rating": 5,
       "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80"
     },
     {
       "name": "Meena Das",
-      "location": "Rabindra Nagar",
+      "location": "Kajora",
       "review": "My teeth whitening results exceeded my expectations. Just one session and I could see a huge difference. The doctors are very experienced and caring. Will definitely return!",
       "rating": 5,
       "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80"
     },
     {
       "name": "Amit Banerjee",
-      "location": "Burnpur",
+      "location": "Andal",
       "review": "Had my wisdom tooth removed here. Zero pain during the procedure and very quick recovery. The doctor explained everything clearly beforehand. Very reassuring experience!",
       "rating": 5,
       "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80"
     },
     {
       "name": "Sonia Patel",
-      "location": "Kulti, Asansol",
+      "location": "Raniganj",
       "review": "I brought my 7-year-old daughter for her first dental checkup. The staff was so gentle and patient with her. She actually wants to come back! The clinic is spotless and very child-friendly.",
       "rating": 5,
       "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80"
     },
     {
       "name": "Rajesh Kumar Singh",
-      "location": "Hirapur, Asansol",
+      "location": "Kajora",
       "review": "Was suffering from severe tooth pain for weeks. Dr. treated it in a single sitting with a root canal. Absolutely painless! The pricing was also very transparent with no hidden charges.",
       "rating": 5,
       "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80"
@@ -133,13 +133,13 @@
     {
       "name": "Kavita Ghosh",
       "location": "Raniganj",
-      "review": "Got complete dental implants for my upper jaw. The result has been life-changing — I can eat normally again after years. The EMI option made it affordable. Thank you Strong Roots team!",
+      "review": "Got complete dental implants for my upper jaw. The result has been life-changing — I can eat normally again after years. The EMI option made it affordable. Thank you Smile Tree team!",
       "rating": 5,
       "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80"
     },
     {
       "name": "Debasish Mondal",
-      "location": "Jamuria, Asansol",
+      "location": "Khas Kajora",
       "review": "Professional service from start to finish. Got teeth cleaning and a filling done in one visit. The hygienists are very thorough. Best dental experience I have had in this area.",
       "rating": 5,
       "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80"
@@ -148,10 +148,10 @@
   "whyChooseUs": [
     { "icon": "🛡️", "title": "100% Safe & Hygienic", "desc": "Sterilized instruments and strict infection control protocols" },
     { "icon": "💊", "title": "Painless Procedures", "desc": "Advanced anesthesia and modern tools for zero discomfort" },
-    { "icon": "⏰", "title": "Flexible Hours", "desc": "Open daily 9 AM – 9 PM for your convenience" },
+    { "icon": "⏰", "title": "Flexible Hours", "desc": "Open Daily 11 AM – 8 PM for your convenience" },
     { "icon": "💰", "title": "Affordable Pricing", "desc": "Transparent pricing with easy EMI options" },
-    { "icon": "🏆", "title": "Experienced Team", "desc": "10+ years of trusted dental expertise in Asansol" },
-    { "icon": "📍", "title": "Centrally Located", "desc": "Easy to reach from all parts of Asansol & Burnpur" }
+    { "icon": "🏆", "title": "Experienced Team", "desc": "10+ years of trusted dental expertise" },
+    { "icon": "📍", "title": "Centrally Located", "desc": "Easy to reach from all parts of Kajora & Raniganj" }
   ],
   "faq": [
     {
@@ -180,11 +180,11 @@
     "whatsappText": "WhatsApp Us",
     "bookText": "Book Free Consultation",
     "sectionTitle": "Ready to Reclaim Your Perfect Smile?",
-    "sectionSubtitle": "Book a free consultation today. Walk in or call — we're here for you daily from 9 AM to 9 PM."
+    "sectionSubtitle": "Book a free consultation today. Walk in or call — we're here for you daily from 11 AM to 8 PM."
   },
   "seo": {
-    "metaTitle": "Strong Roots Dental Care – Best Dentist in Asansol | Painless Dental Treatment",
-    "metaDescription": "Top-rated dental clinic in Asansol offering Root Canal, Dental Implants, Teeth Whitening & more. 5000+ patients treated. Book free consultation today!",
-    "keywords": "best dentist in Asansol, dental clinic Asansol, root canal Asansol, dental implants Burnpur, teeth whitening Asansol"
+    "metaTitle": "Smile Tree Dental Clinic – Best Dentist in Kajora | Painless Dental Treatment",
+    "metaDescription": "Top-rated dental clinic in Kajora offering Root Canal, Dental Implants, Teeth Whitening & more. 5000+ patients treated. Book free consultation today!",
+    "keywords": "best dentist in Kajora, dental clinic Kajora, root canal Kajora, dental implants Raniganj, teeth whitening Kajora"
   }
 }

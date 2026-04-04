@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title id="meta-title">Strong Roots Dental Care – Best Dentist in Asansol</title>
+  <title id="meta-title">Smile Tree Dental Clinic – Best Dentist in Kajora</title>
   <meta name="description" id="meta-desc" content=""/>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,7 +100,7 @@
   <div class="blob w-56 h-56 bg-blue-200 bottom-0 right-0" style="position:absolute;"></div>
   <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center relative z-10">
     <div>
-      <div class="tag">🌟 Best Dental Clinic in Asansol</div>
+      <div class="tag">🌟 Best Dental Clinic in Kajora</div>
       <h1 class="headline text-4xl md:text-5xl font-bold leading-tight mt-2 mb-4 text-gray-900" id="hero-title"></h1>
       <p class="text-gray-500 text-base md:text-lg mb-6 leading-relaxed" id="hero-subtitle"></p>
       <div class="flex flex-wrap gap-2 mb-8" id="hero-badges"></div>
@@ -113,10 +113,10 @@
       </div>
     </div>
     <div class="relative">
-      <img id="hero-img" src="" alt="Best dental clinic Asansol" fetchpriority="high" class="rounded-3xl shadow-2xl w-full object-cover h-72 md:h-96"/>
+      <img id="hero-img" src="" alt="Best dental clinic Kajora" fetchpriority="high" class="rounded-3xl shadow-2xl w-full object-cover h-72 md:h-96"/>
       <div class="absolute -bottom-5 -right-3 bg-white rounded-2xl shadow-xl p-3 flex items-center gap-2">
         <span class="text-2xl">⭐</span>
-        <div><div class="font-bold text-gray-800 text-sm">4.9 / 5</div><div class="text-xs text-gray-400">Google Rating</div></div>
+        <div><div class="font-bold text-gray-800 text-sm">4.4 / 5</div><div class="text-xs text-gray-400">Google Rating</div></div>
       </div>
       <div class="absolute -top-4 -left-3 bg-teal-50 border border-teal-100 rounded-2xl shadow p-3">
         <div class="text-teal-700 font-extrabold text-sm">5000+</div>
@@ -155,7 +155,7 @@
       <h2 class="headline text-3xl font-bold text-gray-900 mt-2">In Caring Hands</h2>
     </div>
     <div class="card flex flex-col md:flex-row items-center gap-8 p-8">
-      <img id="doctor-img" src="" alt="Doctor at Strong Roots Dental Care" loading="lazy" class="w-44 h-44 rounded-3xl object-cover shadow-lg flex-shrink-0"/>
+      <img id="doctor-img" src="" alt="Doctor at Smile Tree Dental Clinic" loading="lazy" class="w-44 h-44 rounded-3xl object-cover shadow-lg flex-shrink-0"/>
       <div>
         <h3 class="text-2xl font-extrabold text-gray-900" id="doctor-name"></h3>
         <p class="font-semibold mt-1" style="color:var(--primary)" id="doctor-qual"></p>
@@ -183,7 +183,7 @@
       <p class="text-gray-500 leading-relaxed mb-6" id="about-text"></p>
       <ul class="space-y-3" id="about-highlights"></ul>
     </div>
-    <img id="about-img" src="" alt="Dental clinic interior Asansol" loading="lazy" class="rounded-3xl shadow-lg w-full h-80 object-cover"/>
+    <img id="about-img" src="" alt="Dental clinic interior Kajora" loading="lazy" class="rounded-3xl shadow-lg w-full h-80 object-cover"/>
   </div>
 </section>
 
@@ -303,7 +303,7 @@
 <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
   <div class="text-white font-bold mb-1" id="footer-name"></div>
   <div id="footer-addr"></div>
-  <div class="mt-4 text-xs opacity-60">Best Dentist in Asansol | Root Canal Asansol | Dental Implants Burnpur | Teeth Whitening Asansol</div>
+  <div class="mt-4 text-xs opacity-60">Best Dentist in Kajora | Root Canal Kajora | Dental Implants Raniganj | Teeth Whitening Kajora</div>
 </footer>
 
 <script>
@@ -393,7 +393,11 @@
 
       const sg=document.getElementById('stats-grid');
       let statsHTML='';
-      d.stats.forEach(s=>{statsHTML+=`<div><div class="text-3xl font-black">${s.value}</div><div class="text-teal-50 text-sm mt-1">${s.label}</div></div>`;});
+      d.stats.forEach(s=>{
+        const num = parseFloat(s.value.replace(/[^0-9.]/g, ''));
+        const suffix = s.value.replace(/[0-9.]/g, '');
+        statsHTML+=`<div><div class="text-3xl font-black stat-num" data-target="${num}" data-suffix="${suffix}">0${suffix}</div><div class="text-teal-50 text-sm mt-1">${s.label}</div></div>`;
+      });
       sg.innerHTML=statsHTML;
 
       const svcG=document.getElementById('services-grid');
@@ -401,7 +405,7 @@
       d.services.forEach(s=>{
         svcHTML+=`
           <div class="card overflow-hidden hover:shadow-xl transition hover:-translate-y-1 duration-300">
-            <div class="relative"><img src="${s.image}" alt="${s.title} Asansol" loading="lazy" class="w-full h-44 object-cover"/>
+            <div class="relative"><img src="${s.image}" alt="${s.title} Kajora" loading="lazy" class="w-full h-44 object-cover"/>
             <span class="absolute top-3 left-3 text-xs font-black px-3 py-1 rounded-full" style="background:var(--primary);color:#fff;">${s.badge}</span></div>
             <div class="p-6"><div class="text-2xl mb-2">${s.icon}</div><h3 class="text-lg font-extrabold text-gray-900 mb-2">${s.title}</h3><p class="text-gray-400 text-sm leading-relaxed">${s.description}</p></div>
           </div>`;
@@ -514,7 +518,45 @@
       setTimeout(() => {
         initCarousel('ba-scroll', 'ba-prev', 'ba-next', 4000);
         initCarousel('testimonials-grid', 'test-prev', 'test-next', 5000);
-      }, 50);
+
+        // Stats Animation
+        const obs = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const nums = entry.target.querySelectorAll('.stat-num');
+              nums.forEach(n => animateValue(n));
+            } else {
+              const nums = entry.target.querySelectorAll('.stat-num');
+              nums.forEach(n => { 
+                n.innerHTML = '0' + (n.getAttribute('data-suffix') || ''); 
+                n.animating = false; 
+              });
+            }
+          });
+        }, { threshold: 0.2 });
+        if(sg) obs.observe(sg);
+      }, 100);
+
+      function animateValue(obj) {
+        if (obj.animating) return;
+        obj.animating = true;
+        const target = parseFloat(obj.getAttribute('data-target')) || 0;
+        const suffix = obj.getAttribute('data-suffix') || '';
+        let startTimestamp = null;
+        const duration = 1500;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          const current = Math.floor(progress * target);
+          obj.innerHTML = current.toLocaleString() + suffix;
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          } else {
+            obj.animating = false;
+          }
+        };
+        window.requestAnimationFrame(step);
+      }
     })
     .catch(e=>console.error('data.json load error',e));
 </script>
